@@ -9,7 +9,7 @@ angular.widget('body', function(templateEl) {
   addCssRules(styleSheet, {
     'body': {
       'overflow-x': 'hidden',
-      'overflow-y': 'auto',
+      'overflow-y': 'hidden',
       'margin': 0,
       'padding': 0,
       'background-color': 'rgb(215, 215, 215)',
@@ -189,14 +189,18 @@ angular.widget('body', function(templateEl) {
 
     angular.element(window).bind('keydown', function(e) {
       switch (e.keyCode) {
-        case 37: {
+        case 33: // pg up
+        case 37: // left
+        case 38: { // up
           if (scope.currentSlide > 1) {
             scope.currentSlide--
             scope.$eval()
           }
           break
         }
-        case 39: {
+        case 34: // pg down
+        case 39: // right
+        case 40: { // down
           if (scope.currentSlide < scope.slideCount) {
             scope.currentSlide++
             scope.$eval()
