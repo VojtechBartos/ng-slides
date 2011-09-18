@@ -1,0 +1,100 @@
+1/
+introduce: google mtv, angularjs
+
+2/
+Q: Kolik z vas programuje v JS ?
+Q: Kolik z vas psalo/pise vetsi app ?
+
+udrzet vetsi projekt je problem
+verim, ze TDD je v soucasne dobe nejlepsi zpusob, jak udrzet vetsi projekt
+
+Q: Kdo zna GWT ?
+
+v tuhle chvili 3 vetsi interni aplikace, ktere byly prepsany z GWT -> angularu a velka spokojenost
+Feedback 15k+ lines -> 1k
+
+3/
+zmensit font
+bez jQ by to bylo jeste vice
+
+popis kodu:
+je mi jasny, ze to vsichni chapete, ale:
+zjednodusene - registrujeme listener, ktery pri stisknuti klavesy updatne text
+
+zvetsit font zpet
+
+4/
+mene kodu = mene prostoru pro bugy
+(ale predevsim loose coupling, strict separation of view / logic)
+
+5/
+angular neni nahradou za jQ, je doplnkem
+jQ, jQmobile, underscore, coffee script
+
+jQ nerika, jak navrhnout architekturu, ani jak testovat
+
+6/
+Q: Kdo vi co je to 2way db ?
+Nejdriv si vysvetlime 1-way DB...
+(FLEX, WPF)
+
+7/
+one way db kazdy zna - jakykoliv klasicky template 
+klasika - Smarty, Django, Closure Templates (JS, Java), JSP, Rails, Symphony
+
+problemy:
+- refresh celeho template najednou
+- jednim smerem (uzivatelsky vstup -> nutno event listeners, NUDA !!!)
+
+8/
+angular to udela za vas
+
+9/
+Q: Kdo si mysli, ze auto testovani je blbost ?
+Q: Kdo z vas testuje ?
+
+10/
+nastavit prostredi neni snadne
+testovaci framework
+spousteni (idealne ve vice prohlizecich)
+v angularu je vsechno nastaveny, doporucuji tutorial (skeleton app)
+
+UKAZAT TUTORIAL a E2E RUNNER
+http://localhost:8000/app/index.html
+http://localhost:8000/test/e2e/runner.html
+
+11/
+angular udela vetsinu DOM manipulaci
+logika je clenena na service, filters, widgets, controllers...
+DI to spoji vsechno dohromady, pri testovani moznost pouzit mocky
+
+12/
+zdaleka jsem neukazal vsechno
+services ($route, $location, $http, $cookie)
+projekt - binding v Chrome
+
+13/
+open source
+web - dokumentace, tutorial, dev guide
+jsfiddle examples
+
+dekuji za pozornost
+verim, ze aspon jeden z vas to vyzkousi
+
+jakekoliv dotazy rad zodpovim...
+
+tricko ?
+
+
+PREPARATION:
+============
+slides
+tutorial app
+tutorial e2e
+eclipse - scenarios.js
+close other
+quit skype, chat, other apps
+
+try navigation
+try e2e runner
+try presenter
