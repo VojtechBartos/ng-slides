@@ -71,6 +71,7 @@ angular.widget('body', function(templateEl) {
       'transition': 'margin, 0.5s',
     },
     '#slideCounter': {
+      'display': 'none',
       'position': 'absolute',
       'top': '50%',
       'left': '50%',
@@ -172,6 +173,15 @@ angular.widget('body', function(templateEl) {
 
     'fieldset.code .syntaxhighlighter': {
       'overflow': 'hidden !important'
+    },
+
+    '.italic': {
+      'font-style': 'italic',
+      'font-family': "'Times New Roman'"
+    },
+
+    'a:active, a:visited' : {
+      'color': 'blue'
     }
 
   })
