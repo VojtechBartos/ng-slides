@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en" xmlns:ng="http://angularjs.org/">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Quick Introduction to AngularJS</title>
+  <script src="../jquery-1.4.2.min.js"></script>
+  <script src="../angular-0.9.17.js" ng:autobind></script>
+  <script src="../syntaxhighlighter/shCore.js"></script>
+  <script src="../syntaxhighlighter/shBrushJScript.js"></script>
+  <script src="../syntaxhighlighter/shBrushXml.js"></script>
+  <link rel="stylesheet" href="../syntaxhighlighter/shCore.css" type="text/css"/>
+  <link rel="stylesheet" href="../syntaxhighlighter/shThemeDefault.css" type="text/css"/>
+  <script src="../slide.js"></script>
+</head>
+<body>
+
+  <slide>
+
+
+    <h1>Quick Introduction to AngularJS</h1>
+    <h2>HTML &amp; JavaScript
+          for web-apps
+        rather than documents</h2>
+
+
+    <p>Vojta Jína
+    <a href="mailto:vojta@google.com">vojta@google.com</a></p>
+  </slide>
+
+
+  <!-- **** -->
+
+
+  <slide title="What is AngularJS ?">
+
+
+    <ul>
+      <li>JavaScript Magic for building Web Apps</li>
+      <li>MVC Framework + HTML Compiler</li>
+      <li>Open Source (GitHub, MIT)</li>
+      <li>Google Funded</li>
+    </ul>
+  </slide>
+
+
+  <!-- **** -->
+
+
+  <slide title="Hello jQuery form!" class="no-logo">
+    <pre class="code">
+    <input id="name3" value="London" />
+    <p id="greeting3"></p>
+
+    ===script===
+    $(function() {
+      var name = $('#name3');
+      var greeting = $('#greeting3');
+
+      function update() {
+        greeting.text('Hello ' + name.val() + ' !');
+      }
+      update();
+
+      name.bind('keydown', function() {
+        setTimeout(update, 0);
+      });
+    });
+    ===/script===
+    </pre>
+  </slide>
+
+
+  <!-- **** -->
+
+
+  <slide title="Hello AngularJS form!" class="no-logo">
+    <pre class="code">
+      <input name="firstName" value="London">
+      <p>Hello {{firstName}} !</p>
+    </pre>
+  </slide>
+
+
+  <!-- **** -->
+
+
+  <slide title="AngularJS vs. jQuery">
+    <h2>So you say jQuery sucks ?</h2>
+
+
+    <h3 style="color: red;">No, we love jQuery, for DOM manipulation !</h3>
+
+
+
+    <p class="italic">"... simplifies HTML document traversing, event handling, animating, and Ajax interactions for rapid web development."</p>
+  </slide>
+
+
+  <!-- **** -->
+
+
+  <slide>
+
+
+
+    <h2>Two-way data binding...</h2>
+    
+    <center><img src="img/two-way.png" width="300px" /></center>
+  </slide>
+
+
+  <!-- **** -->
+
+
+  <slide>
+    <center><img src="img/one-way-db.png" width="800px"/></center>
+  </slide>
+
+
+  <!-- **** -->
+
+
+  <slide>
+    <center><img src="img/two-way-db.png" width="800px" /></center>
+  </slide>
+
+
+  <!-- **** -->
+
+
+  <slide title="Testing">
+
+    <h2>To test, you need...
+
+      1) Environment
+
+      2) Testable code
+    </h2>
+  </slide>
+
+
+  <!-- **** -->
+
+
+  <slide title="Testing Environment">
+
+    <h2>Unit + E2E test environment baked in !</h2>
+    <ul>
+      <li>JasmineJS</li>
+      <li>JsTestDriver</li>
+      <li>Mocks</li>
+      <li>Continuous Integration</li>
+    </ul>
+  </slide>
+
+
+  <!-- **** -->
+
+
+  <slide title="Writing Testable Code">
+
+    <h2>Is easy with AngularJS:</h2>
+
+    <ul>
+      <li>Strict separation of view / logic</li>
+      <li>Dependency Injection</li>
+      <li>No global state</li>
+    </ul>
+  </slide>
+
+
+
+  <!-- **** -->
+
+
+  <slide title="AngularJS Summary">
+    <ul>
+      <li>Increases the level of abstraction.</li>
+      <li>Helps to write less code.</li>
+      <li>Makes your app testable.</li>
+      <li>Works well together with other libs.</li>
+      <li>Helps to design and maintain big apps.</li>
+    </ul>
+  </slide>
+
+
+  <!-- **** -->
+
+
+  <slide title="The Community Rocks !">
+
+    <ul>
+      <li>Fork the code at <a href="http://github.com/angular">http://github.com/angular</a></li>
+      <li>Follow <a href="http://twitter.com/#!/angularjs">@angularjs</a></li>
+      <li>Ask on mailing list / IRC <a href="http://groups.google.com/group/angular">http://groups.google.com/group/angular</a></li>
+      <li>See our documentation / guide / tutorial <a href="http://angularjs.org">http://angularjs.org</a></li>
+    </ul>
+  </slide>
+
+
+</body>
+</html>
